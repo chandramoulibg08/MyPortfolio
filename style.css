@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg: #080d1a;
+    --card: #111a2d;
+    --blue: #38bdf8;
+    --white: #f1f5f9;
+    --gray: #94a3b8;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--white);
+}
+
+/* NAVBAR */
+header {
+    background: #0d1425;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #263449;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.logo, footer h3 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo span, footer span,
+.hero span, .section h2 span {
+    color: var(--blue);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar ul a {
+    color: var(--gray);
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.navbar ul a:hover {
+    color: var(--blue);
+}
+
+#menuBtn {
+    display: none;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* HOME */
+.hero {
+    min-height: 85vh;
+    padding: 80px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tagline {
+    color: var(--blue);
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 5vw, 58px);
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 25px;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.tagline) {
+    color: var(--gray);
+    line-height: 1.8;
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 22px;
+    background: var(--blue);
+    color: #08111f;
+    border: 1px solid var(--blue);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px #38bdf855;
+}
+
+.outline {
+    background: transparent;
+    color: var(--blue);
+}
+
+.social {
+    margin-top: 30px;
+    display: flex;
+    gap: 25px;
+}
+
+.social a {
+    color: var(--gray);
+    text-decoration: none;
+}
+
+.social a:hover {
+    color: var(--blue);
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile-circle {
+    width: 260px;
+    height: 260px;
+    border: 3px solid var(--blue);
+    border-radius: 50%;
+    background: var(--card);
+    display: grid;
+    place-items: center;
+    font-size: 65px;
+    font-weight: bold;
+    color: var(--blue);
+    box-shadow: 0 0 40px #38bdf833;
+    animation: float 4s ease-in-out infinite;
+}
+
+.profile p {
+    margin-top: 25px;
+    color: var(--gray);
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+/* SECTIONS */
+.section {
+    padding: 85px 10%;
+    text-align: center;
+}
+
+.dark {
+    background: #0e1728;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.about-box {
+    max-width: 800px;
+    margin: auto;
+    padding: 35px;
+    text-align: left;
+    background: var(--card);
+    border: 1px solid #263449;
+    border-radius: 12px;
+}
+
+.about-box h3 {
+    color: var(--blue);
+    margin-bottom: 20px;
+}
+
+.about-box p {
+    color: var(--gray);
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.details {
+    margin-top: 25px;
+    border-top: 1px solid #263449;
+    padding-top: 15px;
+}
+
+/* SKILLS AND PROJECTS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: var(--card);
+    padding: 25px;
+    border: 1px solid #263449;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: var(--blue);
+    box-shadow: 0 8px 25px #0005;
+}
+
+.card h3 {
+    color: var(--blue);
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: var(--gray);
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.project {
+    text-align: left;
+}
+
+.project-icon {
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.project small {
+    display: inline-block;
+    color: var(--blue);
+    margin-top: 18px;
+}
+
+/* CONTACT */
+.contact-text {
+    color: var(--gray);
+    margin-bottom: 25px;
+}
+
+#contactForm {
+    max-width: 550px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    background: var(--card);
+    color: white;
+    border: 1px solid #334155;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+input:focus, textarea:focus {
+    outline: 1px solid var(--blue);
+}
+
+textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+#contactForm button {
+    align-self: flex-start;
+}
+
+#status {
+    color: var(--blue);
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+    background: #050914;
+    text-align: center;
+    padding: 30px;
+    line-height: 2;
+    color: var(--gray);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .buttons, .social {
+        justify-content: center;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 18px 6%;
+    }
+
+    #menuBtn {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background: #111a2d;
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+
+    .section, .hero {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .section h2 {
+        font-size: 30px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-circle {
+        width: 210px;
+        height: 210px;
+    }
+}
