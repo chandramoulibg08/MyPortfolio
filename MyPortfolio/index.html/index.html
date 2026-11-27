@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandramouli B G | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="#home" class="logo">CBG<span>.</span></a>
+
+        <button id="menuBtn" aria-label="Toggle menu">☰</button>
+
+        <ul id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <p class="tagline">WELCOME TO MY PORTFOLIO</p>
+
+        <h1>Hi, I'm <span>Chandramouli B G</span></h1>
+
+        <h2>I'm a <span id="typing"></span></h2>
+
+        <p>
+            I am a Computer Science student passionate about
+            programming, technology and software development.
+            I love learning new skills and creating innovative projects.
+        </p>
+
+        <div class="buttons">
+            <a href="#projects" class="btn">Explore My Work</a>
+            <a href="#contact" class="btn outline">Contact Me</a>
+        </div>
+
+        <div class="social">
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+    </div>
+
+    <div class="profile">
+        <div class="profile-circle">CBG</div>
+        <p>Future Software Developer 💻</p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <p class="tagline">GET TO KNOW ME</p>
+    <h2>About <span>Me</span></h2>
+
+    <div class="about-box">
+        <h3>Who Am I?</h3>
+        <p>
+            Hello! I am Chandramouli B G, a Computer Science
+            and Engineering student at BIET, Davangere, Karnataka.
+
+            I am interested in programming, web development,
+            problem solving and emerging technologies.
+            My goal is to become a skilled software developer.
+        </p>
+
+        <div class="details">
+            <p><b>Education:</b> B.E. Computer Science and Engineering</p>
+            <p><b>College:</b> BIET, Davangere</p>
+            <p><b>Location:</b> Karnataka, India</p>
+            <p><b>Career Goal:</b> Software Developer</p>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section dark">
+    <p class="tagline">WHAT I KNOW</p>
+    <h2>My <span>Skills</span></h2>
+
+    <div class="grid">
+        <div class="card"><h3>C</h3><p>C Programming</p></div>
+        <div class="card"><h3>Java</h3><p>Object-Oriented Programming</p></div>
+        <div class="card"><h3>Python</h3><p>Programming Fundamentals</p></div>
+        <div class="card"><h3>HTML</h3><p>Web Structure</p></div>
+        <div class="card"><h3>CSS</h3><p>Web Design</p></div>
+        <div class="card"><h3>JS</h3><p>JavaScript</p></div>
+        <div class="card"><h3>DSA</h3><p>Data Structures</p></div>
+        <div class="card"><h3>PS</h3><p>Problem Solving</p></div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+    <p class="tagline">MY WORK</p>
+    <h2>My <span>Projects</span></h2>
+
+    <div class="grid">
+        <div class="card project">
+            <div class="project-icon">💧</div>
+            <h3>Water Level Indicator</h3>
+            <p>
+                An IoT project that monitors water levels
+                using an ESP8266 and ultrasonic sensor.
+            </p>
+            <small>ESP8266 | Sensor | C</small>
+        </div>
+
+        <div class="card project">
+            <div class="project-icon">🎓</div>
+            <h3>Student Management System</h3>
+            <p>
+                A programming project to store, manage
+                and display student information.
+            </p>
+            <small>Java | OOP</small>
+        </div>
+
+        <div class="card project">
+            <div class="project-icon">🌐</div>
+            <h3>Personal Portfolio</h3>
+            <p>
+                A responsive website to showcase my
+                skills, projects and achievements.
+            </p>
+            <small>HTML | CSS | JavaScript</small>
+        </div>
+    </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="section dark">
+    <p class="tagline">MY ACHIEVEMENTS</p>
+    <h2>My <span>Certificates</span></h2>
+
+    <div class="card">
+        <h3>🏆 Technical Certifications</h3>
+        <p>Add your completed courses and certificates here.</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <p class="tagline">GET IN TOUCH</p>
+    <h2>Contact <span>Me</span></h2>
+
+    <p class="contact-text">
+        Have a project idea or opportunity? Let's connect!
+    </p>
+
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message ↗</button>
+    </form>
+
+    <p id="status"></p>
+</section>
+
+<footer>
+    <h3>CBG<span>.</span></h3>
+    <p>Designed by Chandramouli B G</p>
+    <p>© 2026 All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
